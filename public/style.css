@@ -1,0 +1,26 @@
+.head {
+    color: 	#000000;
+    font-size: 40px;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.column {
+    float: left;
+    width: 20%;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 12px 12px 12px 12px;
+
+}
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
