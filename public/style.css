@@ -32,7 +32,7 @@ header {
 
 }
 
-.logo {
+.logo { /* will be implemented once logo is designed */
   cursor: pointer;
 }
 
@@ -53,6 +53,16 @@ header {
   color: #0088a9;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
 body,html {
   margin: 0;
   padding: 0;
@@ -62,6 +72,7 @@ body,html {
     color: 	#000000;
     font-size: 40px;
     text-align: center;
+    padding: 40px
 }
 
 .row::after {
