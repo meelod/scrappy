@@ -6,7 +6,7 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header id = "myHeader">
             <h1>Scrappy</h1>
             <nav>
                 <ul class = "nav_links">
@@ -16,6 +16,20 @@
                 </ul>
             </nav>
           </header>
+          <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
         <div class = "head">
             <h4>Our Team</h4>
         </div>
