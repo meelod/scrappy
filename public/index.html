@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
   </head>
   <body>
-    <header>
+    <header id = "myHeader">
       <h1>Scrappy</h1>
       <nav>
           <ul class = "nav_links">
@@ -17,6 +17,20 @@
           </ul>
       </nav>
     </header>
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+      </script>
     <div class = "head">
       <h4>Something here lol</h4>
   </div>
